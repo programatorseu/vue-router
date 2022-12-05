@@ -24,3 +24,11 @@ const router = createRouter({
   linkActiveClass: 'active-link'
 })
 ```
+
+## Dynamic route
+```js
+  {path: '/destination/:id', component: () => import('@/views/DestinationShow.vue')},
+```
+Destination.vue
+ - import json 
+ - filter array  

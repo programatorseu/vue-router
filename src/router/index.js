@@ -9,11 +9,9 @@ const routes = [
   {path: '/brazil', name: 'Brazil', component: ()=> import('@/views/Brazil.vue')},
   {path: '/jamaica', name: 'jamaica', component: ()=> import('@/views/Jamaica.vue')},
   {path: '/hawaii', name: 'hawaii', component: ()=> import('@/views/Hawaii.vue')},
-
   {path: '/panama', name: 'panama', component: ()=> import('@/views/Panama.vue')},
+  {path: '/destination/:id', component: () => import('@/views/DestinationShow.vue')},
 
-
-  {path: '/'}
 ]
 
 const router = createRouter({
