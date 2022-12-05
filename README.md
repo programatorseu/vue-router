@@ -14,3 +14,13 @@ what if we want to load particular JS file if we go to corrensponding pages --> 
 ```js
   {path: '/hawaii', name: 'hawaii', component: ()=> import('@/views/Hawaii.vue')},
 ```  
+## Navigation
+- create seperate component 
+- add active class link 
+```js
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+  linkActiveClass: 'active-link'
+})
+```
